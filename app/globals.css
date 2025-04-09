@@ -16,3 +16,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.search-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  width: 80%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.styled-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #3b82f6; /* Μπλε περίγραμμα */
+  border-radius: 8px;         /* Στρογγυλεμένες γωνίες */
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.styled-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* Focus ring */
+}
+

@@ -1,16 +1,32 @@
 "use client";
-
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></link>
 
 export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white shadow-md py-4">
-      <div className="container mx-auto px-6 flex items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold text-blue-500">
+    <nav className="bg-white shadow-md py-8">
+     
+      <div className="container mx-auto px-2 flex items-center justify-between">
+       <div className="logo-pic">
+        <Image 
+          src="/logo.ico" 
+          alt="Logo" 
+          width={100}
+          height={50}
+          style={{
+            borderRadius: '16px',
+            boxShadow: '0 4px 6px rgba(0,0,0,1)',
+            objectFit: 'contain',
+          }}
+        />
+       </div>
+        <div className="flex items-start">
+          <Link href="/" className="text-4xl font-bold text-blue-500">
             Real Estate
           </Link>
         </div>
