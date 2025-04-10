@@ -43,6 +43,16 @@ export default function Navigation() {
             label="About"
             current={pathname === "/about"}
           />
+          <NavLink
+            href="/career"
+            label="Career"
+            current={pathname === "/career"}
+          />
+          <NavLink
+            href="/login"
+            label="Log-in/Sign-up"
+            current={pathname === "/login"}
+          />
         </div>
 
         <div className="md:hidden">

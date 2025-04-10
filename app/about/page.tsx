@@ -62,7 +62,7 @@ const AboutPage = () => {
         <div className="mt-10 pt-6 border-t border-gray-200">
           <p className="text-gray-600">
             Founded in 2023 by the talented students of the University of
-            Piraeus, we're proud to bring academic excellence to the real estate
+            Piraeus, we are proud to bring academic excellence to the real estate
             market.
           </p>
         </div>
